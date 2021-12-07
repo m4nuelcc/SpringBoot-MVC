@@ -8,13 +8,7 @@
 </head>
 <body>
 
-
-<h1>
-Primer ejemplo MVC con Spring
-</h1>
-<br>
-
-<a href="muestraFormulario"  align="center">> ir al formulario </a>
+Hola ${param.nombreAlumno} Beinvenido al curso de spring
 
 </body>
 </html>

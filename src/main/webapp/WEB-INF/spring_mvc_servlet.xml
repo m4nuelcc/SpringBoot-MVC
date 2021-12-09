@@ -22,6 +22,9 @@
 		<property name="prefix" value="/WEB-INF/vista/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
+	
+	<!-- indicamos la carpeta de los recursos del proyecto -->
+	<mvc:resources location="/recursos/" mapping="/recursos/**"></mvc:resources>
 
 </beans>
 

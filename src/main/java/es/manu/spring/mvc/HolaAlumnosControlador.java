@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HolaAlumnosControlador {
@@ -23,13 +24,14 @@ public class HolaAlumnosControlador {
 	}
 
 	@RequestMapping("/procesarFormulario2")
-	public String procesarFormulario2(HttpServletRequest request, Model modelo) {
+//	public String procesarFormulario2(HttpServletRequest request, Model modelo) {
+	public String procesarFormulario2(@RequestParam("nombreAlumno") String nombre, Model modelo) {	
 		
-		String nombre = request.getParameter("nombreAlumno").toUpperCase();
+		//String nombre = request.getParameter("nombreAlumno").toUpperCase();
 		
 		nombre+= "es el mejor alumno ";
 		
-		String mensajeFinal = "¿Quien es el mejor alumno? " + nombre;
+		String mensajeFinal = "¿Quien es el mejor alumno? " + nombre.toUpperCase();
 		
 		
 		

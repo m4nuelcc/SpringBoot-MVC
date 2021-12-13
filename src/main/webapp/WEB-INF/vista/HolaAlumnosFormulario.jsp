@@ -10,8 +10,7 @@
 
 	<form action="procesarFormulario2" method="get">
 
-		<input type="text" name="nombreAlumno"> 
-		<input type="submit">
+		<input type="text" name="nombreAlumno"> <input type="submit">
 
 	</form>
 

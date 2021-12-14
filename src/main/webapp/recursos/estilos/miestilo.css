@@ -1,5 +1,12 @@
 body {
 	
 	background-color: silver;
-	
+
+}
+p {
+font-family: 'Open Sans';
+font-size: 14px;
+color: #ff8000;
+line-height: 18px;
+margin-bottom: 20px;
 }

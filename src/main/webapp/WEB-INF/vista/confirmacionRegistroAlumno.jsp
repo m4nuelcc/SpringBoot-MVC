@@ -5,6 +5,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Confirmacion del Registro</title>
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/recursos/estilos/miestilo.css">
 </head>
 <body>
 
@@ -17,6 +19,13 @@
 		<br><br>
 		
 		El usario: <strong style="color: green;">${elAlumno.nombre } </strong>  ha elegido la asignatura optativa <strong>${elAlumno.optativa }</strong>
+		
+		<br><br>
+		
+		<p>El Estudiante:  <strong class="color">${elAlumno.nombre } 
+		</strong>  ha elegido la elegido Estudiar en: <strong>${elAlumno.ciudadEstudios }</strong>
+		y los idioma Elegidos son <strong>${elAlumno.idiomasAlumno}</strong>
+		</p>
 
 	</div>
 </body>

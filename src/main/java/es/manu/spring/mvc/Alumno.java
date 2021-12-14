@@ -30,11 +30,35 @@ public class Alumno {
 	}
 
 
+	
+	public String getCiudadEstudios() {
+		return ciudadEstudios;
+	}
+
+	public void setCiudadEstudios(String ciudadEstudios) {
+		this.ciudadEstudios = ciudadEstudios;
+	}
+
+
+
+	public String getIdiomasAlumno() {
+		return idiomasAlumno;
+	}
+
+	public void setIdiomasAlumno(String idiomasAlumno) {
+		this.idiomasAlumno = idiomasAlumno;
+	}
+
+
+
+	private String ciudadEstudios;
 
 	private String nombre;
 	
 	private String apellido;
 	
 	private String optativa;
+	
+	private String idiomasAlumno;
 	
 }

@@ -9,6 +9,9 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Formulario de Registro</title>
+
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/recursos/estilos/miestilo.css">
 </head>
 <body>
 
@@ -43,8 +46,33 @@
 
 		<br>
 		<br>
+		<div>
+			<div>
+				Madrid
+				<form:radiobutton path="ciudadEstudios" value="Madrid" />
+				Barcelona
+				<form:radiobutton path="ciudadEstudios" value="Barcelona" />
+				Lanzarote
+				<form:radiobutton path="ciudadEstudios" value="Lanzarote" />
+				Alicnate
+				<form:radiobutton path="ciudadEstudios" value="Alicante" />
+			</div>
+			
+			<div  >
+			
+				Ingles <form:checkbox path="idiomasAlumno" value="Ingles"/>		
+				Frances <form:checkbox path="idiomasAlumno" value="Frances"/>	
+				Aleman <form:checkbox path="idiomasAlumno" value="Aleman"/>	
+				Chino <form:checkbox path="idiomasAlumno" value="Chino"/>		
 
-	
+			
+			</div>
+		</div>
+
+
+		<br>
+		<br>
+
 
 		<input type="submit" value="Enviar">
 

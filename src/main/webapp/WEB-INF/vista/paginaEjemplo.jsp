@@ -17,6 +17,10 @@
 	<br>
 
 	<a href="secundario/muestraFormulario"> Formulario Peor </a>
+	
+	<br>
+
+	<a href="alumno/muestraFormulario"> Registro Alumno </a>
 
 </body>
 </html>

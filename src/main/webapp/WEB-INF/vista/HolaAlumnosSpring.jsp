@@ -5,8 +5,12 @@
 <head>
 <meta charset="ISO-8859-1" content="text/html">
 <title>Insert title here</title>
+
+<%--  ${pageContext.request.contextPath} no devuelve la raiz  --%>
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/recursos/estilos/miestilo.css">
+	
+	
 </head>
 <body>
 	<h1 align="center">Hola ${param.nombreAlumno} Bienvenido al curso
@@ -16,9 +20,10 @@
 	<p align="center">${miMensaje} 2021</p>
 
 	<%-- 		 ${pageContext.request.contextPtath} nos devuelve la raiz de nuestro sitio web   --%>
-
+	
+	<div align="center">
 	<img alt="foto" align="top"
 		src="${pageContext.request.contextPath}/recursos/imgs/karakol.jpg">
-
+	</div>
 </body>
 </html>

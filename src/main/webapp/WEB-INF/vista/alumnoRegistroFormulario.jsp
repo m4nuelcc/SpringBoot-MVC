@@ -14,16 +14,38 @@
 
 	<!-- 	elAlumno es el modelo del AlumnoController -->
 	<form:form action="procesarFormulario" modelAttribute="elAlumno">
+
+		<!-- 		hace referencia al getter o setter de la clase alumno -->
+		Nombre <form:input path="nombre" />
+
+		<br>
+		<br>
 		
-<!-- 		hace referencia al getter o setter de la clase alumno -->
-		Nombre <form:input path="nombre"/>
+		Apellido <form:input path="apellido" />
+
+		<br>
+		<br>
 		
-		<br><br>
+		Asignatura Optativa
 		
-		Apellido <form:input path="apellido"/>
-		
-		<br><br>
-		
+		<br>
+		<br>
+
+		<!-- 		con multiple se puede seleccionar varias options -->
+		<form:select path="optativa" multiple="true">
+
+			<form:option value="Danza" />
+			<form:option value="Karate" />
+			<form:option value="Comercio" />
+			<form:option value="Manualidades" />
+
+		</form:select>
+
+		<br>
+		<br>
+
+	
+
 		<input type="submit" value="Enviar">
 
 	</form:form>

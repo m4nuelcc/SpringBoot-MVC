@@ -11,8 +11,8 @@
 <body>
 
 	<div align="center">
-		El alumno con el nombre <strong>${elAlumno.nombre}</strong> y apellido
-		<strong>${elAlumno.apellido}</strong> ${elAlumno.apellido} ha sido
+		El alumno con el nombre <strong>${elAlumno.nombre}</strong> apellido
+		<strong>${elAlumno.apellido}</strong> con la edad ${elAlumno.edad} y correo ${elAlumno.email} sido
 		registrado satisfactoriamente
 		
 		

@@ -11,9 +11,12 @@
 <body>
 
 	<div align="center">
-		El alumno con el nombre <strong>${elAlumno.nombre}</strong> apellido
-		<strong>${elAlumno.apellido}</strong> con la edad ${elAlumno.edad} y correo ${elAlumno.email} sido
-		registrado satisfactoriamente
+		El alumno <strong>${elAlumno.nombre}</strong>
+		<strong>${elAlumno.apellido}</strong>
+		con la edad ${elAlumno.edad} 
+		correo <strong> ${elAlumno.email} </strong>
+	    y cPostal ${elAlumno.codigoPostal} 
+	    sido registrado satisfactoriamente
 		
 		
 		<br><br>

@@ -39,6 +39,12 @@
 
 				<br>
 				<br>
+				
+		C Postal <form:input path="codigoPostal" />
+				<form:errors path="codigoPostal" style="color:red" />
+
+				<br>
+				<br>
 		
 		Email <form:input path="email" />
 				<form:errors path="email" style="color:red" />

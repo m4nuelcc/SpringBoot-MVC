@@ -18,6 +18,7 @@ public class AlumnoController {
 	
 	// el metodo miBinder controla para que los campos String del formulario
 	// no puedan contener espacios y asi envitar datos vacios
+	
 	@InitBinder
 	public void miBinder(WebDataBinder binder) {
 		

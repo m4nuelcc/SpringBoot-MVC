@@ -5,6 +5,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class Alumno {
@@ -17,8 +18,10 @@ public class Alumno {
 	@Size(min = 2, message = "Campo Requerido")
 	private String apellido;
 
-	@NotBlank(message = "Campo Requerido")
-	@Email(message = "Intdocuzca un Email Valido")
+//	@NotBlank(message = "Campo Requerido")
+//	@Email(message = "Intdocuzca un Email Valido")
+	@NotNull
+	@Pattern(regexp = "^[^@]+@[^@]+\\.[a-zA-Z]{2,}$", message="email no valido")
 	private String email;
 
 	@Min(value = 18, message = "La edad no puede ser menor de 18 años")
@@ -32,7 +35,19 @@ public class Alumno {
 
 	private String ciudadEstudios;
 	
+	@Pattern(regexp = "[0-9]{5}", message = "Solo 5 valores numericos")
+	private String codigoPostal;
 	
+	
+	
+
+	public String getCodigoPostal() {
+		return codigoPostal;
+	}
+
+	public void setCodigoPostal(String codigoPostal) {
+		this.codigoPostal = codigoPostal;
+	}
 
 	public int getEdad() {
 		return edad;
